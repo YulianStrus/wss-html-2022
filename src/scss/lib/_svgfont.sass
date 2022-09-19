@@ -1,0 +1,59 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-HBico1: "\EA01"
+$icon-HBico2: "\EA02"
+$icon-HBico3: "\EA03"
+$icon-HBico4: "\EA04"
+$icon-HBico5: "\EA05"
+$icon-HBico6: "\EA06"
+$icon-FS1: "\EA07"
+$icon-FS2: "\EA08"
+$icon-FS3: "\EA09"
+$icon-FS4: "\EA0A"
+$icon-FS5: "\EA0B"
+$icon-FS6: "\EA0C"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-HBico1:before
+	content: $icon-HBico1
+.icon-HBico2:before
+	content: $icon-HBico2
+.icon-HBico3:before
+	content: $icon-HBico3
+.icon-HBico4:before
+	content: $icon-HBico4
+.icon-HBico5:before
+	content: $icon-HBico5
+.icon-HBico6:before
+	content: $icon-HBico6
+.icon-FS1:before
+	content: $icon-FS1
+.icon-FS2:before
+	content: $icon-FS2
+.icon-FS3:before
+	content: $icon-FS3
+.icon-FS4:before
+	content: $icon-FS4
+.icon-FS5:before
+	content: $icon-FS5
+.icon-FS6:before
+	content: $icon-FS6
