@@ -21,6 +21,7 @@ h1{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 40px;
   background: $ButColorPeach;
   .slick-arrow {
     position: absolute;
@@ -70,6 +71,27 @@ h1{
     color: #fff;
   }
 }
+.inl{
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
+
 .m-l {
   margin-left: 48px;
 }
@@ -81,12 +103,48 @@ h1{
 .slider {
   position: relative;
   display: block;
-  height: 670px;
-  background-image: url("../img/bg-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   align-content: center;
+  .BGslider{
+    height: 670px;
+    background-image: url("../img/bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .slick-arrow {
+      display: inline;
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      width: 25px;
+      height: 25px;
+    }
+    .slick-prev{
+      left: 0;
+      display: flex;
+      border: none;
+      background: none;
+    }
+    .slick-next{
+      right: 0;
+      display: flex;
+      border: none;
+      background: none;
+    }
+    .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slick-dots li{
+      width: 15px;
+      height: 15px;
+      color: #FFFFFF;
+    }
+    /* Активная точка */
+    .slick-dots li.slick-active{
+      color: $BGPink;
+    }
+  }
   .inl {
     padding: 200px 5%;
     margin-top: auto;
@@ -116,11 +174,11 @@ h1{
     }
   }
 }
-
 .PositionSlider {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  text-align: center;
 }
 .dot {
   display: inline-flex;
@@ -179,34 +237,6 @@ h1{
   position: absolute;
   left: 510px;
   top: 120px;
-}
-.sec2cir img{
-  margin: 8px;
-}
-.sec2cir .img1{
-  position: absolute;
-  top: 270px;
-  left: 150px;
-}
-.sec2cir .img2{
-  position: absolute;
-  top: 400px;
-  left: 650px;
-}
-.sec2cir .img3{
-  position: absolute;
-  top: 350px;
-  left: 1150px;
-}
-.sec2cir .img4{
-  position: absolute;
-  top: 660px;
-  left: 350px;
-}
-.sec2cir .img5{
-  position: absolute;
-  top: 700px;
-  left: 950px;
 }
 .sec3, .sec4{
   display: block;
