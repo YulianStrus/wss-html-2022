@@ -14,22 +14,33 @@ h1{
   font-weight: 400;
   font-size: 64px;
 }
+.inl {
+  display: inline-block;
+}
 .subheader {
   display: flex;
   justify-content: space-between;
   width: 100%;
   background: $ButColorPeach;
   .slick-arrow {
+    position: absolute;
+    top: 50%;
     z-index: 10;
     width: 25px;
     height: 25px;
+  }
     .slick-prev{
-      background: url("../img/icon-left.png");
+      left: 0;
+      display: flex;
+      border: none;
+      background: none;
     }
     .slick-next{
-      background: url("../img/icon-right.png");
+      right: 0;
+      display: flex;
+      border: none;
+      background: none;
     }
-  }
 }
 .BgBar {
   padding: 10px 20%;
