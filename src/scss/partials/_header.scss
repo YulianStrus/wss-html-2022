@@ -1,0 +1,118 @@
+.header{
+	height: 140px;
+	width: 100%;
+	position: relative;
+}
+.panel{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 0 0;
+	.tool{
+		display: flex;
+		gap: 118px;
+		align-items: center;
+		.phone_number{
+			display: flex;
+			align-items: center;
+			gap: 6px;
+		}
+		.phone_number:hover{
+			color: $darkPink;
+		}
+		.language{
+			position: relative;
+		}
+	}
+	.logo{
+		position: absolute;
+		top: 24px;
+		left: calc(50% - 90px);
+	}
+	.right_tools{
+		display: flex;
+		gap: 40px;
+
+		.icon_hover:hover{
+			filter: invert(80%) sepia(72%) saturate(2267%) hue-rotate(304deg) brightness(101%) contrast(116%);
+		}
+		.like{
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			.counter{
+				display: flex;
+				width: 24px;
+				height: 24px;
+				align-items: center;
+				justify-content: center;
+				padding-top: 2px;
+				background: $pink;
+				color: $colorWhite;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+.nav{
+	height: 69px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.nav_item{
+		position: relative;
+		text-transform: uppercase;
+	}
+	.nav_item a:hover{
+		color: $pink;
+	}
+	.select:after{
+		position: absolute;
+		content: "";
+		left: calc(100% + 12px);
+		top: calc(50% + 1px);
+		transform: translateY(-50%);
+		border: 5px solid transparent;
+		border-radius: 3px;
+		border-top-color: $pink;
+	}
+}
+.submenu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: 24px;
+	padding: 16px;
+	background: $colorWhite;
+	border: 1px solid #E2E2E2;
+	white-space: nowrap;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(.8);
+	transition: .4s ease-in-out;
+}
+.language .submenu{
+	margin-top: 3px;
+	padding: 8px 16px;
+	left: 50%;
+	margin-left: -25px;
+}
+.submenu li{
+	text-transform: none;
+	padding-bottom: 16px;
+	&:last-child{
+		padding-bottom: 0;
+	}
+}
+.language .submenu li{
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-bottom: 8px;
+}
+li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+}

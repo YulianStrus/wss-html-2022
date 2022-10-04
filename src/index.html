@@ -10,19 +10,15 @@
 <div class="wrapper">
 	@@include('./partials/subheader.html')
 	@@include('./partials/header.html')
-	@@include('./partials/MainSlider.html')
-	@@include('./partials/OQB.html')
-	@@include('./partials/fourStep.html')
-	@@include('./partials/bestseller.html')
-	@@include('./partials/respons.html')
-	@@include('./partials/jollyfamily.html')
-	@@include('./partials/ourcategory.html')
-	@@include('./partials/followus.html')
-	@@include('./partials/retailerstor.html')
-	@@include('./partials/footer.html',  {"socials": {
-		"fb": "facebook.com/include",
-		"tw": "twitter.com/include"
-	}})
+	<main class="main">
+		@@include('./partials/mainSlider.html')
+		@@include('./partials/madeBook.html')
+		@@include('./partials/bestseller.html')
+		@@include('./partials/favorite.html')
+		@@include('./partials/categories.html')
+		@@include('./partials/followUs.html')
+	</main>
+	@@include('./partials/footer.html')
 </div>
 <!-- END wrapper-->
 @@include('./partials/foot.html')
