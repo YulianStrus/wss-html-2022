@@ -1,7 +1,7 @@
 {
   "name": "gulp-4",
   "version": "1.0.0",
-  "description": "",
+  "description": "[web-systems](http://web-systems.solutions/) стартовий шаблон. ***",
   "main": "index.js",
   "scripts": {
     "dev": "gulp clean && gulp build && bower install && gulp",
@@ -53,5 +53,16 @@
     "stylelint-config-standard": "^26.0.0",
     "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-scss": "^4.3.0"
-  }
+  },
+  "dependencies": {
+    "functional-red-black-tree": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YulianStrus/wss-html-2022.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YulianStrus/wss-html-2022/issues"
+  },
+  "homepage": "https://github.com/YulianStrus/wss-html-2022#readme"
 }
